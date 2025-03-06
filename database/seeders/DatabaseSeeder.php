@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use App\Models\User;
 use Database\Seeders\UserSeeder;
+use Database\Seeders\StaffSeeder;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -23,6 +24,7 @@ class DatabaseSeeder extends Seeder
         
         $this->call([
             UserSeeder::class,
+            StaffSeeder::class,
         ]);
     }
 }
